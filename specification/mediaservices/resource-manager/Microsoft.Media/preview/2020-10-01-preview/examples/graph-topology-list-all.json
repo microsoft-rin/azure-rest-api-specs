@@ -1,0 +1,331 @@
+{
+  "parameters": {
+    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "resourceGroupName": "contoso",
+    "accountName": "contosomedia",
+    "api-version": "2020-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "graphtopology0",
+            "properties": {
+              "description": "description",
+              "activationMode": "Manual",
+              "state": "Inactive",
+              "parameters": [
+                {
+                  "name": "rtspUrlParameter",
+                  "type": "String",
+                  "description": "rtsp source url parameter",
+                  "default": "rtsp://microsoft.com/video.mp4"
+                },
+                {
+                  "name": "rtspPasswordParameter",
+                  "type": "SecretString",
+                  "description": "rtsp source password parameter"
+                },
+                {
+                  "name": "assetNameParameter",
+                  "type": "String",
+                  "description": "asset name parameter",
+                  "default": "defaultAsset"
+                }
+              ],
+              "sources": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphRtspSource",
+                  "name": "rtspSource",
+                  "transport": "http",
+                  "endpoint": {
+                    "@odata.type": "#Microsoft.Media.MediaGraphUnsecuredEndpoint",
+                    "credentials": {
+                      "@odata.type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
+                      "username": "username"
+                    },
+                    "url": "${rtspUrlParameter}"
+                  }
+                }
+              ],
+              "processors": [],
+              "sinks": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphAssetSink",
+                  "name": "assetSink",
+                  "inputs": [
+                    {
+                      "nodeName": "rtspSource"
+                    }
+                  ],
+                  "assetNamePattern": "${assetNameParameter}"
+                }
+              ]
+            },
+            "systemData": {
+              "createdBy": "user@microsoft.com",
+              "createdByType": "User",
+              "createdAt": "2020-10-01T00:00:00Z",
+              "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+              "lastModifiedByType": "Application",
+              "lastModifiedAt": "2020-10-01T00:00:00Z"
+            }
+          },
+          {
+            "name": "graphtopology1",
+            "properties": {
+              "description": "description",
+              "activationMode": "Manual",
+              "state": "Inactive",
+              "parameters": [
+                {
+                  "name": "rtspUrlParameter",
+                  "type": "String",
+                  "description": "rtsp source url parameter",
+                  "default": "rtsp://microsoft.com/video.mp4"
+                },
+                {
+                  "name": "rtspPasswordParameter",
+                  "type": "SecretString",
+                  "description": "rtsp source password parameter"
+                },
+                {
+                  "name": "assetNameParameter",
+                  "type": "String",
+                  "description": "asset name parameter",
+                  "default": "defaultAsset"
+                }
+              ],
+              "sources": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphRtspSource",
+                  "name": "rtspSource",
+                  "transport": "http",
+                  "endpoint": {
+                    "@odata.type": "#Microsoft.Media.MediaGraphUnsecuredEndpoint",
+                    "credentials": {
+                      "@odata.type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
+                      "username": "username"
+                    },
+                    "url": "${rtspUrlParameter}"
+                  }
+                }
+              ],
+              "processors": [],
+              "sinks": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphAssetSink",
+                  "name": "assetSink",
+                  "inputs": [
+                    {
+                      "nodeName": "rtspSource"
+                    }
+                  ],
+                  "assetNamePattern": "${assetNameParameter}"
+                }
+              ]
+            },
+            "systemData": {
+              "createdBy": "user@microsoft.com",
+              "createdByType": "User",
+              "createdAt": "2020-10-01T00:00:00Z",
+              "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+              "lastModifiedByType": "Application",
+              "lastModifiedAt": "2020-10-01T00:00:00Z"
+            }
+          },
+          {
+            "name": "graphtopology2",
+            "properties": {
+              "description": "description",
+              "activationMode": "Manual",
+              "state": "Inactive",
+              "parameters": [
+                {
+                  "name": "rtspUrlParameter",
+                  "type": "String",
+                  "description": "rtsp source url parameter",
+                  "default": "rtsp://microsoft.com/video.mp4"
+                },
+                {
+                  "name": "rtspPasswordParameter",
+                  "type": "SecretString",
+                  "description": "rtsp source password parameter"
+                },
+                {
+                  "name": "assetNameParameter",
+                  "type": "String",
+                  "description": "asset name parameter",
+                  "default": "defaultAsset"
+                }
+              ],
+              "sources": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphRtspSource",
+                  "name": "rtspSource",
+                  "transport": "http",
+                  "endpoint": {
+                    "@odata.type": "#Microsoft.Media.MediaGraphUnsecuredEndpoint",
+                    "credentials": {
+                      "@odata.type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
+                      "username": "username"
+                    },
+                    "url": "${rtspUrlParameter}"
+                  }
+                }
+              ],
+              "processors": [],
+              "sinks": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphAssetSink",
+                  "name": "assetSink",
+                  "inputs": [
+                    {
+                      "nodeName": "rtspSource"
+                    }
+                  ],
+                  "assetNamePattern": "${assetNameParameter}"
+                }
+              ]
+            },
+            "systemData": {
+              "createdBy": "user@microsoft.com",
+              "createdByType": "User",
+              "createdAt": "2020-10-01T00:00:00Z",
+              "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+              "lastModifiedByType": "Application",
+              "lastModifiedAt": "2020-10-01T00:00:00Z"
+            }
+          },
+          {
+            "name": "graphtopology3",
+            "properties": {
+              "description": "description",
+              "activationMode": "Manual",
+              "state": "Inactive",
+              "parameters": [
+                {
+                  "name": "rtspUrlParameter",
+                  "type": "String",
+                  "description": "rtsp source url parameter",
+                  "default": "rtsp://microsoft.com/video.mp4"
+                },
+                {
+                  "name": "rtspPasswordParameter",
+                  "type": "SecretString",
+                  "description": "rtsp source password parameter"
+                },
+                {
+                  "name": "assetNameParameter",
+                  "type": "String",
+                  "description": "asset name parameter",
+                  "default": "defaultAsset"
+                }
+              ],
+              "sources": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphRtspSource",
+                  "name": "rtspSource",
+                  "transport": "http",
+                  "endpoint": {
+                    "@odata.type": "#Microsoft.Media.MediaGraphUnsecuredEndpoint",
+                    "credentials": {
+                      "@odata.type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
+                      "username": "username"
+                    },
+                    "url": "${rtspUrlParameter}"
+                  }
+                }
+              ],
+              "processors": [],
+              "sinks": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphAssetSink",
+                  "name": "assetSink",
+                  "inputs": [
+                    {
+                      "nodeName": "rtspSource"
+                    }
+                  ],
+                  "assetNamePattern": "${assetNameParameter}"
+                }
+              ]
+            },
+            "systemData": {
+              "createdBy": "user@microsoft.com",
+              "createdByType": "User",
+              "createdAt": "2020-10-01T00:00:00Z",
+              "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+              "lastModifiedByType": "Application",
+              "lastModifiedAt": "2020-10-01T00:00:00Z"
+            }
+          },
+          {
+            "name": "graphtopology4",
+            "properties": {
+              "description": "description",
+              "activationMode": "Manual",
+              "state": "Inactive",
+              "parameters": [
+                {
+                  "name": "rtspUrlParameter",
+                  "type": "String",
+                  "description": "rtsp source url parameter",
+                  "default": "rtsp://microsoft.com/video.mp4"
+                },
+                {
+                  "name": "rtspPasswordParameter",
+                  "type": "SecretString",
+                  "description": "rtsp source password parameter"
+                },
+                {
+                  "name": "assetNameParameter",
+                  "type": "String",
+                  "description": "asset name parameter",
+                  "default": "defaultAsset"
+                }
+              ],
+              "sources": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphRtspSource",
+                  "name": "rtspSource",
+                  "transport": "http",
+                  "endpoint": {
+                    "@odata.type": "#Microsoft.Media.MediaGraphUnsecuredEndpoint",
+                    "credentials": {
+                      "@odata.type": "#Microsoft.Media.MediaGraphUsernamePasswordCredentials",
+                      "username": "username"
+                    },
+                    "url": "${rtspUrlParameter}"
+                  }
+                }
+              ],
+              "processors": [],
+              "sinks": [
+                {
+                  "@odata.type": "#Microsoft.Media.MediaGraphAssetSink",
+                  "name": "assetSink",
+                  "inputs": [
+                    {
+                      "nodeName": "rtspSource"
+                    }
+                  ],
+                  "assetNamePattern": "${assetNameParameter}"
+                }
+              ]
+            },
+            "systemData": {
+              "createdBy": "user@microsoft.com",
+              "createdByType": "User",
+              "createdAt": "2020-10-01T00:00:00Z",
+              "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+              "lastModifiedByType": "Application",
+              "lastModifiedAt": "2020-10-01T00:00:00Z"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

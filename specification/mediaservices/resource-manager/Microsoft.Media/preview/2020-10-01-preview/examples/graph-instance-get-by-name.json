@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "subscriptionId": "00000000-0000-0000-0000-000000000000",
+    "resourceGroupName": "contoso",
+    "accountName": "contosomedia",
+    "graphInstanceName": "graphinstance1",
+    "api-version": "2020-10-01-preview"
+  },
+  "responses": {
+    "404": {},
+    "200": {
+      "body": {
+        "name": "graphinstance1",
+        "properties": {
+          "topologyName": "graphtopology1",
+          "description": "description",
+          "state": "Inactive",
+          "parameters": [
+            {
+              "name": "rtspUrlParameter",
+              "value": "rtsp://contoso.com/stream"
+            },
+            {
+              "name": "rtspPasswordParameter"
+            },
+            {
+              "name": "assetNameParameter",
+              "value": "asset1"
+            }
+          ]
+        },
+        "systemData": {
+          "createdBy": "user@microsoft.com",
+          "createdByType": "User",
+          "createdAt": "2020-10-01T00:00:00Z",
+          "lastModifiedBy": "00000000-0000-0000-0000-000000000000",
+          "lastModifiedByType": "Application",
+          "lastModifiedAt": "2020-10-01T00:00:00Z"
+        }
+      }
+    }
+  }
+}
