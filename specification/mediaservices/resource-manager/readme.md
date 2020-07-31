@@ -72,15 +72,15 @@ These settings apply only when `--tag=package-2020-10-preview` is specified on t
 
 ``` yaml $(tag) == 'package-2020-10-preview'
 input-file:
-  - Microsoft.Media/stable/2018-07-01/AccountFilters.json
-  - Microsoft.Media/stable/2018-07-01/Accounts.json
-  - Microsoft.Media/stable/2018-07-01/AssetsAndAssetFilters.json
-  - Microsoft.Media/stable/2018-07-01/ContentKeyPolicies.json
-  - Microsoft.Media/stable/2018-07-01/Encoding.json
+  - Microsoft.Media/stable/2020-05-01/AccountFilters.json
+  - Microsoft.Media/stable/2020-05-01/Accounts.json
+  - Microsoft.Media/stable/2020-05-01/AssetsAndAssetFilters.json
+  - Microsoft.Media/stable/2020-05-01/ContentKeyPolicies.json
+  - Microsoft.Media/stable/2020-05-01/Encoding.json
   - Microsoft.Media/preview/2020-10-01-preview/GraphInstances.json
   - Microsoft.Media/preview/2020-10-01-preview/GraphTopologies.json
-  - Microsoft.Media/stable/2018-07-01/StreamingPoliciesAndStreamingLocators.json
-  - Microsoft.Media/stable/2018-07-01/streamingservice.json
+  - Microsoft.Media/stable/2020-05-01/StreamingPoliciesAndStreamingLocators.json
+  - Microsoft.Media/stable/2020-05-01/streamingservice.json
 ```
 
 
