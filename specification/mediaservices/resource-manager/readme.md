@@ -77,7 +77,6 @@ input-file:
   - Microsoft.Media/stable/2020-05-01/AssetsAndAssetFilters.json
   - Microsoft.Media/stable/2020-05-01/ContentKeyPolicies.json
   - Microsoft.Media/stable/2020-05-01/Encoding.json
-  - Microsoft.Media/preview/2020-02-01-preview/MediaGraphs.json
   - Microsoft.Media/preview/2020-10-01-preview/GraphInstances.json
   - Microsoft.Media/preview/2020-10-01-preview/GraphTopologies.json
   - Microsoft.Media/stable/2020-05-01/StreamingPoliciesAndStreamingLocators.json
